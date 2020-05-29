@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+
+int main()
+{
+int a,b,temp;
+int *p,*q;
+clrscr();
+
+printf("\n\nEnter the values of a & b: ");
+scanf("%d%d",&a,&b);
+
+p=&a;
+q=&b;
+
+printf("\n\nValues before swapping : %d%d",a,b);
+
+temp=*p;
+*p=*q;
+*q=temp;
+
+printf("\n\nValues after swapping : %d%d",a,b);
+
+return 0;
+}
